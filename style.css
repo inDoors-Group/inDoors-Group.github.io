@@ -1,0 +1,118 @@
+.header {
+    background-color: #E97409;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav,footer {
+    width: 100%;
+    overflow: hidden;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    font-size: 0;
+}
+
+#title {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 4rem;
+    color: #ffffff;
+    background-color: #604ED1;
+    transition: 0.5s;
+}
+
+#title.scrolled {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 551px) {
+    #title.scrolled {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 806px) {
+    #title:not(.scrolled) {
+        display: inline-block;
+    }
+}
+
+#buttons {
+    display: block;
+    vertical-align: top; /* Needed, despite what your IDE may tell you */
+    color: #ffffff;
+    background-color: #E97409;
+    transition: 0.2s;
+}
+
+@media (min-width: 551px) {
+    #buttons.scrolled {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 806px) {
+    #buttons:not(.scrolled) {
+        display: inline-block;
+    }
+}
+
+#buttons.display-transitioning {
+    opacity: 0;
+}
+
+#buttons:not(.display-transitioning) {
+    opacity: 1;
+}
+
+.button {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.5rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+#buttons>.button {
+    font-size: 1.5rem;
+}
+
+#copyright {
+    text-align: center;
+    color: #f1f1f1;
+    background-color: #404040;
+}
