@@ -112,6 +112,26 @@ nav {
     font-size: 1.5rem;
 }
 
+.download-button {
+    display: block;
+	width: max-content;
+    margin: 0.5rem auto;
+    padding: 1rem 2rem;
+    background-color: #E97409;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.download-button:hover {
+    background-color: #cc6608;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
 #copyright {
     text-align: center;
     color: #f1f1f1;
