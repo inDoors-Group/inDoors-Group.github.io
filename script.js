@@ -1,5 +1,5 @@
 // URL to fetch APK files from
-const apkUrl = "http://navigation.indoorsgroup.ca/";
+const apkUrl = "https://navigation.indoorsgroup.ca/";
 
 // Function to fetch and determine the latest APK version
 async function fetchAndDisplayDownloadButton() {
